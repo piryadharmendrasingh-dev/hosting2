@@ -1,0 +1,53 @@
+combat:
+  duration-seconds: 20
+
+actionbar:
+  enabled: true
+  show-combat-timer: true
+  show-pearl-timer: true
+  format: '&b⚔ &fCombat: &e{combat} &8| &dPearl: &e{pearl}'
+
+ender-pearl:
+  enabled: true
+  cooldown-seconds: 10
+
+elytra:
+  disable-during-combat: true
+  unequip-during-combat: false
+  block-firework-boost: true
+
+commands:
+  blocked:
+    - home
+    - spawn
+    - tpa
+    - tp
+    - warp
+    - back
+    - rtp
+    - hub
+  allowed:
+    - msg
+    - tell
+    - w
+    - whisper
+    - reply
+    - r
+    - ignore
+    - help
+    - diamondcombat
+
+logout:
+  punish: true
+  use-normal-death: true
+
+messages:
+  command-blocked: '&cYou cannot use that command during combat.'
+  pearl-cooldown: '&cEnder Pearl is on cooldown for {time}s.'
+  elytra-blocked: '&cElytra is disabled during combat!'
+  reloaded: '&aDIAMOND Combat config reloaded.'
+  no-permission: '&cYou do not have permission.'
+  usage: '&bUse: /diamondcombat <reload|status|help|set>'
+  status: '&bDIAMOND Combat &7| Combat: &f{combat}s &7| Pearl: &f{pearl}s &7| Elytra: &f{elytra}'
+  setting-updated: '&aUpdated {setting} to {value}.'
+  invalid-setting: '&cInvalid setting/value. Use /diamondcombat help.'
