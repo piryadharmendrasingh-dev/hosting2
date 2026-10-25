@@ -1,0 +1,21 @@
+name: DIAMONDCombat
+version: '${version}'
+main: in.diamondmc.combat.DiamondCombatPlugin
+api-version: '1.21'
+author: DIAMOND MC
+description: DIAMOND Combat Ultimate
+
+commands:
+  diamondcombat:
+    description: DIAMOND Combat admin command
+    usage: /diamondcombat help
+    aliases:
+      - dcombat
+
+permissions:
+  diamondcombat.admin:
+    description: Allows managing DIAMOND Combat
+    default: op
+  diamondcombat.bypass:
+    description: Bypasses combat restrictions
+    default: false
